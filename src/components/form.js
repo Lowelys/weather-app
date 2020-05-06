@@ -29,17 +29,17 @@ let Form = (props) =>{
         props.changeCity(e.currentTarget.value)
     }
 
-    let getWeathet = () => {
+    let getWeather = () => {
         if (props.city){
             props.getWeatherFromOpenWeatherMap();
             props.getWeatherFromWeatherbit();
-        } else {alert('enter city')}
+        } else {alert('введите город')}
     }
 
     return(
         <form className="formWeath">
             <input type="text" name="city" placeholder="city" value={props.city} onChange={updateCityText}/>
-            <button type="button" onClick={getWeathet}>Получить сводку</button>
+            <button type="button" onClick={getWeather}>Получить сводку</button>
             <div className="source">
                 <div className="sourceText">
                     онлайн сервис:
