@@ -1,17 +1,17 @@
 import React from "react";
+import "./../App.css"
 
-const Weather = (props) => (
-    <div>
-        {props.city &&
-        <div className='infoWeath'>
-            <p>Местоположение:{props.city} {props.country}</p>
-            <p>Температура:{props.temp}</p>
-            <p>Давление:{props.pressure}</p>
-            <p>Заход солнца:{props.sunset}</p>
-        </div>
-        }
-        <p className='error'>{props.error}</p>
-    </div>
-);
+let Info = (props) =>{
 
-export default Weather;
+    return(<>
+            { props.data.temp && <div className="infoWeath">
+                <p>температура, °C: {props.data.temp}</p>
+                <p>давление, мбар: {props.data.pressure}</p>
+                <p>влажность, %: {props.data.humidity}</p>
+                <p>скорость ветра, м/с: {props.data.windSpeed}</p>
+            </div> }
+        </>
+    )
+}
+
+export default Info;

@@ -36,7 +36,7 @@ body {
     height: 400px;
     background: url("img/weather.jpg") center center no-repeat;
     background-blend-mode: multiply;
-    background-color: #484747;
+    background-color: #48474770;
     border: 2px solid #1f1f1f;
     border-right: 2px solid #131e29;
     background-size: cover;
@@ -79,7 +79,7 @@ input::-moz-placeholder {
 
 button {
     height:32px;
-    background-color:#3B3DB5;
+    background-color: #b52238;
     text-align: center;
     font-size: 16px;
     border: solid 1px black;
@@ -102,7 +102,7 @@ button:active {
 }
 
 .info h2 {
-    font-size: 3em;
+    font-size: 2em;
     color: #fff;
 }
 
